@@ -25,7 +25,25 @@
     box-sizing: border-box;
 }
 
+/* moving cursor */
+.movingCursor {
+    width: 40px;
+    height: 40px;
+    background: url(asset/ezgif.com-optimize.gif) no-repeat;
+    border-radius: 50%;
+
+    position: absolute;
+    opacity: .7;
+    transition: 400ms, linear;
+    top: 0;
+    right: 0;
+    border: 2px double black;
+
+
+}
+
 .heroSec {
+    cursor: pointer;
 
     min-height: 100vh;
     min-width: 90vw;
@@ -238,7 +256,7 @@
     background: url("asset/laptop.jpg") no-repeat;
     background-size: cover;
     height: 70vh;
-    width: 100vw;
+    width: 90vw;
     transition: 1s linear;
     display: flex;
     justify-content: center;
@@ -254,7 +272,7 @@
     background: url("asset/lamp.gif")no-repeat;
     background-size: cover;
     height: 100vh;
-    min-width: 100vw;
+    min-width: 90vw;
     position: relative;
     display: flex;
     justify-content: center;
